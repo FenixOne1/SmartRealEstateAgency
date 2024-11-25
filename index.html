@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Trámites Inmobiliarios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#login">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Gestión de Trámites Inmobiliarios</h1>
+            <p>Facilitamos tus procesos inmobiliarios de manera rápida y segura.</p>
+            <a href="#servicios" class="btn">Conoce más</a>
+        </section>
+
+        <section id="servicios">
+            <h2>Nuestros Servicios</h2>
+            <div class="servicios-contenedor">
+                <div class="servicio">
+                    <h3>Compra y Venta</h3>
+                    <p>Gestión completa para la compra y venta de propiedades.</p>
+                </div>
+                <div class="servicio">
+                    <h3>Arrendamientos</h3>
+                    <p>Administración de contratos y gestión de pagos.</p>
+                </div>
+                <div class="servicio">
+                    <h3>Legalización</h3>
+                    <p>Asesoría en trámites notariales y registros públicos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="/enviar" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Gestión de Trámites Inmobiliarios. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
